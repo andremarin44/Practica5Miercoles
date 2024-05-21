@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    objetojuego.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    objetojuego.h
 
 FORMS += \
     mainwindow.ui

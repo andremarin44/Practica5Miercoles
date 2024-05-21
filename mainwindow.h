@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QTimer>
 #include <QGraphicsScene>
-#include "objeto.h" // Suponiendo que tienes una clase Objeto para representar los elementos del juego
+#include "objetojuego.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,14 +26,12 @@ private slots:
     void onIniciarJuego();
     void onTiempoAgotado();
     void moverObjetos();
+    void generarNuevoObjeto();
 
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *scene;
-    QTimer *timer;
-
-    // Otros miembros privados necesarios
-    // ...
+    QTimer *timerGeneracion;
 };
 
 #endif // MAINWINDOW_H
